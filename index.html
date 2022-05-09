@@ -5,6 +5,11 @@
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Bootstrap based Creative Agency Portfolio Theme">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon1.ico">
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap" rel="stylesheet">
@@ -19,6 +24,49 @@
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		<!--- style added by khaled --->
+		<style>
+			.nav-pills .nav-link, .nav-pills .show > .nav-link {
+				border-style: solid;
+				color: rgb(180, 180, 180) !important;
+				border-color: rgb(235, 235, 235);
+				border-width: 0.5px;
+				border-radius: 10px;
+			}
+	
+			.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+				
+				border-style: solid;
+				background-color: #17a2b8;
+				color: #FFF !important;
+				border-radius: 10px;
+				border-width: 0.5px;
+	
+			}
+	
+			.nav-pills .nav-link {
+	
+				font-size: 16px;
+				text-transform: uppercase;
+				color: rgb(156, 156, 156) !important;
+				border-style: solid;
+				margin: 3px;
+				padding: 10px;
+				padding-left: 15px;
+				padding-right: 15px;
+	
+			}
+			.borderAnimation{ 
+				transition: border-width 0.3s linear;
+			}
+	
+			.borderAnimation:hover{
+				border: 3px solid #17a2b8; 
+				border-radius: 15px;
+			}
+		</style>
+		<!--- end of style added by khaled --->
 
 </head>
 
@@ -39,28 +87,14 @@
 	<div class="offcanvas-body vh-lg-100 d-flex align-items-start flex-column px-5 px-md-6">
 		<!-- Offcanvas inner START -->
 		<ul class="nav dropdown-toggle-start-icon d-block flex-column mb-5">
-			<li class="nav-item position-relative">
-				<a href="index.html" class="nav-link text-white-stroke display-6 h5 d-block">Home</a>
-				<!-- Offcanvas dropdown START -->
-				<a class="dropdown-toggle collapsed" data-bs-toggle="collapse" href="#home-dropdown-collapse" role="button" aria-expanded="false" aria-controls="home-dropdown-collapse"></a>
-				<li class="collapse" id="home-dropdown-collapse">
-				  <ul class="list-unstyled w-100 pb-4 pe-0 pe-lg-5">
-						<li> <a class="dropdown-item px-0 text-body" href="index.html">page-01</a> </li>
-						<li> <a class="dropdown-item px-0 text-body" href="index.html">page-02</a> </li>
-						<li> <a class="dropdown-item px-0 text-body" href="index.html">page-03<span class="badge bg-danger ms-2">New</span></a> </li>
-						<li> <a class="dropdown-item px-0 text-body" href="index.html">page-04</a> </li>
-						<li> <a class="dropdown-item px-0 text-body" href="index.html">page-05</a> </li>
-					</ul>
-				</li>
-				<!-- Offcanvas dropdown END -->
 			<li class="nav-item">
-				<a class="nav-link text-white-stroke display-6 h5" href="comming-soon.html">About Us</a>
+				<a class="nav-link text-white-stroke display-6 h5" href="#startups">Startups</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link text-white-stroke display-6 h5" href="comming-soon.html">Services</a>
 			</li>
-			 <li class="nav-item">
-				<a class="nav-link text-white-stroke display-6 h5" href="startups.html">Startups</a>
+			<li class="nav-item">
+				<a class="nav-link text-white-stroke display-6 h5" href="comming-soon.html">About Us</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link text-white-stroke display-6 h5" href="comming-soon.html">Contact Us</a>
@@ -226,18 +260,9 @@ Header START -->
 			<!-- Main Menu START -->
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav navbar-nav-scroll ms-auto">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="index.html" id="demosMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-						<ul class="dropdown-menu" aria-labelledby="demosMenu">
-							<li> <a class="dropdown-item" href="index.html">Page-01</a> </li>
-							<li> <a class="dropdown-item" href="index.html">Page-02<span class="badge bg-danger ms-2">New</span></a> </li>
-							<li> <a class="dropdown-item" href="index.html">Page-03</a> </li>
-						</ul>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="comming-soon.html">About Us</a></li>
-
+					<li class="nav-item"><a class="nav-link" href="#startups">Startups</a></li>
 					<li class="nav-item"><a class="nav-link" href="comming-soon.html">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="startups.html">Startups</a></li>
+					<li class="nav-item"><a class="nav-link" href="comming-soon.html">About Us</a></li>
 					<li class="nav-item"><a class="nav-link" href="comming-soon.html">Contact Us</a></li>
 				</ul>
 			</div>
@@ -279,11 +304,11 @@ Main Banner -->
 								<!-- Slider Info -->
 								<div class="row justify-content-between mb-3 mb-md-5">
 									<div class="col-md-8 animate__animated animate__fadeInUp">
-										<h2 class="d-block text-white display-6">Welcome to <span class="text-primary-stroke text-stroke-md">BAGHDAD </span>Global Ecosystem.</h2>
+										<h2 class="d-block text-white display-6">Welcome to <span class="text-primary-stroke text-stroke-md">IRAQ </span>Global Ecosystem.</h2>
 									</div>
 									<div class="col-md-4 animate__animated animate__fadeInUp">
 										<p class="lead text-white d-none d-md-block">Discover the burgeoning investment landscape and innovative concepts emerging from the IRAQ’s capital.</p>
-										<a href="#" class="btn btn-line text-white mt-0 mt-md-4">Read More</a>
+										<a href="#startups" class="btn btn-line text-white mt-0 mt-md-4">Show Startups</a>
 									</div>
 								</div>
 								<!-- Slider Image -->
@@ -338,7 +363,7 @@ Main Banner -->
 									</div>
 									<div class="col-md-4 animate__animated animate__fadeInUp">
 										<p class="lead text-white d-none d-md-block">BAGHDAD Startup is a world-class tech ecosystem opening doors to global opportunities from an optimal business environment for entrepreneurial-minded innovators</p>
-										<a href="#" class="btn btn-line text-white mt-0 mt-md-4">Read More</a>
+										<a href="#startups" class="btn btn-line text-white mt-0 mt-md-4">Show Startups</a>
 									</div>
 								</div>
 								<!-- Slider Image -->
@@ -392,6 +417,92 @@ Main Banner -->
 </section>
 <!-- =======================
 Main banner -->
+
+
+<!-- =======================
+Isotope Filter START -->
+<section>
+	<div class="container" id="startups">
+		<div class="display-5 text-center font-heading fw-bold caret-primary text-dark-stroke text-primary-shadow">
+			<span class="text-dark-stroke text-light-shadow d-block d-sm-inline-block">Our</span>
+			<span class="typed text-end" data-type-text="Startups"></span>
+		  </div><br>
+		<!-- Nav Filters -->
+		<div class="row">
+			<div class="col-12">
+				<div class="grid-menu" data-target=".grid-container">
+					<ul class="nav nav-pills justify-content-start mb-5">
+						<span class="nav-link disabled ps-0" style="color: #000 !important;font-weight: bold;border-style:hidden">Show me:</span>
+						<li class="nav-item ss"> <a data-filter="*" class="nav-link active">All STARTUPS</a></li>
+						<li class="nav-item ss"> <a data-filter=".it" class="nav-link">IT</a></li>
+						<li class="nav-item ss"> <a data-filter=".services" class="nav-link">Services</a></li>
+						<li class="nav-item ss"> <a data-filter=".retail_trade" class="nav-link">Retail Trade</a></li>
+						<li class="nav-item ss"> <a data-filter=".trading_industry" class="nav-link">Trading Industry</a></li>
+						<li class="nav-item ss"> <a data-filter=".manufacturing" class="nav-link">Manufacturing</a></li>
+						<li class="nav-item ss"> <a data-filter=".healthCare" class="nav-link">HealthCare</a></li>
+						<li class="nav-item ss"> <a data-filter=".education" class="nav-link">Education</a></li>
+						<li class="nav-item ss"> <a data-filter=".construction" class="nav-link">Construction</a></li>
+						<li class="nav-item ss"> <a data-filter=".tourism" class="nav-link">Tourism</a></li>
+						<li class="nav-item ss"> <a data-filter=".financial" class="nav-link">Financial</a></li>
+						<li class="nav-item ss"> <a data-filter=".consulting_and_training" class="nav-link">Consulting and Training</a></li>
+						<li class="nav-item ss"> <a data-filter=".others" class="nav-link">Others</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<!-- Filter Items START -->
+		<div class="row g-3 grid-container overflow-hidden" data-isotope='{"layoutMode": "fitRows"}'>
+			<h3 class="grid-item tourism">Tourism</h3>
+			<div class="col-sm-6 col-md-3 grid-item tourism">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">Wen Guide</h6>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 grid-item tourism">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">Kurdistan Outdoor</h6>
+				</div>
+			</div>
+
+			<h3 class="grid-item services">Services</h3>
+			<div class="col-sm-6 col-md-3 grid-item services">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">FullStop</h6>
+				</div>
+			</div>
+			<h3 class="grid-item it">Information Technology</h3>
+			<div class="col-sm-6 col-md-3 grid-item it">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">Redwheel</h6>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 grid-item it">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">Black Ace</h6>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 grid-item it">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">Ahjaz Tabibak</h6>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 grid-item it">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">Rebare Adam</h6>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 grid-item it">
+				<div class="borderAnimation aos bg-light p-5 mb-30" data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="2000" data-aos-easing="ease-in-out">
+					<h6 class="position-absolute top-50 start-50 translate-middle">Rebare Adam</h6>
+				</div>
+			</div>
+		</div>
+		<!-- Filter Items END -->
+	</div><!-- row END -->
+</section>
+<!-- =======================
+Isotope Filter END -->
 
 <!-- =======================
 Service START -->
@@ -910,6 +1021,11 @@ JS libraries, plugins and custom scripts -->
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/tilt.js/dist/vanilla-tilt.min.js"></script>
 <script src="assets/vendor/sticky-js/sticky.min.js"></script>
+<script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script src="assets/vendor/jarallax/jarallax.min.js"></script>
+<script src="assets/vendor/ityped/index.js"></script>
+<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/imagesLoaded/imagesloaded.js"></script>
 
 
 <!-- Template Functions -->
