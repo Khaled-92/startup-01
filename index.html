@@ -22,6 +22,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
 
+	<script>
+		document.addEventListener("touchstart", function(){}, true);
+	</script>
+
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -42,6 +46,7 @@
 				border-width: 0.5px;
 	
 			}
+
 			.nav-pills .nav-link {
 				font-size: calc(0.7em + 0.6vmin);
 				text-transform: uppercase;
@@ -71,11 +76,16 @@
 				border: 1px solid #dadada;
 			}
 
-			.borderAnimation:hover{
-				padding: 20px;
+
+			.borderAnimation:hover, .borderAnimation:active {
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-touch-callout: none; /*only to disable context menu on long press*/
+padding: 20px;
 				border-bottom: 10px solid #47378c;
 				border-right: 10px solid #47378c;
-			}
+}
+			
 			.bg-dark {
     			background-color: #019390 !important;
 				
