@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Services</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Bootstrap based Creative Agency Portfolio Theme">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon1.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		<!--- style added by khaled --->
+		<style>
+			.nav-pills .nav-link, .nav-pills .show > .nav-link {
+				border-style: solid;
+				color: rgb(180, 180, 180) !important;
+				border-color: rgb(235, 235, 235);
+				border-width: 0.5px;
+				border-radius: 18px;
+			}
+			.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+				border-style: solid;
+				background-color: #47378c;
+				color: #FFF !important;
+				border-radius: 18px;
+				border-width: 0.5px;
+	
+			}
+			.nav-pills .nav-link:hover, .nav-pills .show > .nav-link {
+				
+				border-style: solid;
+				background-color: #47378c ;
+				
+				color: #FFF !important;
+				border-radius: 18px;
+				border-width: 1px;
+	
+			}
+			.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+				color:white !important;
+				text-decoration: underline;
+				text-underline-position: under;
+				text-decoration-thickness: 3px;
+
+			}
+
+			@media only screen and (max-width: 120px) {
+				.nav-pills .nav-link  { 
+				font-size: 100px; 
+				}
+			}
+			.nav-pills .nav-link {
+	
+				font-size: calc(0.5em + 0.9vmin);
+				text-transform: uppercase;
+				color: rgb(125, 125, 125) !important;
+				border-style: solid;
+				margin: 3px;
+				padding: 7px;
+				padding-left: 15px;
+				padding-right: 15px;
+	
+			}
+			.borderAnimation{ 
+				border: 1px solid #dadada;
+			}
+
+			.borderAnimation:hover{
+				padding: 20px;
+				border-bottom: 10px solid #47378c;
+				border-right: 10px solid #47378c;
+			}
+			.bg-dark {
+    			background-color: #019390 !important;
+				
+			}
+
+			@media screen and (min-width: 320px) {
+				.display-6 {
+					font-size: 24px
+				}
+			}
+			@media screen and (min-width: 1000px) {
+				.display-6 {
+					font-size: 60px;
+					font-weight: 1000;
+				}
+			}
+			@media screen and (min-width: 320px) {
+				.head-add {
+					margin-bottom: -50px;
+				}
+			}
+			@media screen and (min-width: 1000px) {
+				.head-add {
+					margin-top: 40px;
+				}
+			}
+			.sin-padding {
+				padding-left: 0;
+				padding-right: 0;
+				margin: 0px;
+  			}
+			.box-2 {
+				height: 200px;
+				margin-bottom: 0px ;
+				padding: 0;
+			}
+			.img-wrap {
+				max-width: 9.5rem;
+				margin: 0 auto;
+				min-height: 1rem;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				filter: gray; /* IE6-9 */
+  				-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+			}
+			.img-wrap:hover {
+				outline: 0;
+				filter: none;
+  				-webkit-filter: grayscale(0%);
+			}
+			.comp_name {
+				margin-top: 60px;
+				font-size: 20px;
+				font-weight: 1000;
+			}
+			.sub_name {
+				font-size: 16px;
+				font-weight: 500;
+				margin-bottom: 660px;
+				font-family: "Work Sans",sans-serif
+			}
+			.head_g {
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+
+			.footer-bg {
+				background-color: #19191C;
+			}
+			.bg-dark-f {
+				background-color: #19191C;
+			}
+		</style>
+		<!--- end of style added by khaled --->
+
+</head>
+
+<body>
+
+<!-- Pre loader -->
+<div class="preloader">
+	<img class="preloader-item" src="assets/images/loader/02.gif" alt="Loading">
+</div>
+
+<!-- Offcanvas end START -->
+<div class="offcanvas offcanvas-end bg-dark-f" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEnd" style="background-image:url(assets/images/bg/pattern/05.png); background-position: center left; background-size: cover;">
+	<div class="offcanvas-header">
+	  <a class="ms-auto btn btn-primary btn-round zoom-hover" data-bs-dismiss="offcanvas" aria-label="Close">
+			<i class="fas fa-times p-0"></i>
+		</a>
+  	</div>
+	<div class="offcanvas-body vh-lg-100 d-flex align-items-start flex-column px-5 px-md-6">
+		<!-- Offcanvas inner START -->
+		<ul class="nav dropdown-toggle-start-icon d-block flex-column mb-5">
+			<li class="nav-item">
+				<a class="nav-link text-white display-6 h5" href="index.html">Startups</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white display-6 h5" href="services.html">Services</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white display-6 h5" href="comming-soon.html">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white display-6 h5" href="comming-soon.html">Contact Us</a>
+			</li>
+		</ul>
+		<div class="mt-auto mb-5">
+			<a href="mailto:khalid.ali@test.com" class="font-heading text-white text-primary-hover d-block mb-3">khalid.ali@test.com</a>
+			<a href="tel:+9647702982325" class="font-heading text-white text-primary-hover">+964 770 298 2325</a>
+		</div>
+		<!-- Offcanvas inner END -->
+	</div>
+</div>
+<!-- Offcanvas end END -->
+
+<!-- Search START -->
+<div class="search-full collapse bg-dark p-3 pb-lg-0" id="search-open">
+	<div class="container position-relative">
+		<h2 class="position-absolute start-0 bottom-0 mb-n5 display-1 text-white-stroke opacity-1">
+			<span class="d-block">Search</span>
+		</h2>
+		<div class="row vh-100">
+			<div class="d-flex flex-column my-auto py-5 w-100">
+				<!-- Search form START -->
+				<form class="form-dark form-line position-relative w-100">
+					<div class="mb-3 input-group-lg input-text-white-stroke mb-0">
+						<!-- Search input -->
+						<input class="form-control font-heading caret-primary mb-0 pe-6" type="text" name="search" placeholder="What are you looking for?">
+						<span class="focus-border"></span>
+					</div>
+					<!-- Search button -->
+					<button type="button" class="position-absolute end-0 top-0 btn pb-3 text-primary-hover h-100">
+						<i class="bi bi-search display-8"></i>
+					</button>
+				</form>
+				<!-- Search form END -->
+				<p class="small mt-2 mb-0">e.g. text here text here text here </p>
+			</div>
+
+			<!-- Search button close START -->
+			<a class="position-fixed top-0 end-0 m-3 m-md-5 btn btn-white btn-round zoom-hover" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open" aria-expanded="true">
+				<i class="fas fa-times p-0"></i>
+			</a>
+			<!-- Search button close END -->
+		</div>
+	</div>
+</div>
+<!-- Search END -->
+
+<!-- Login Popup START -->
+<div class="modal fade" id="topbarlogin" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary pattern-overlay-7">
+				<div class="modal-title p-3 text-white-force">
+					<h5 class="mb-0">Sign in to your account!</h5>
+					<p class="mb-0">Nice to see you! Please log in with your account.</p>
+				</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+      <div class="modal-body">
+        <div class="w-100 p-3">
+					<!-- Form START -->
+					<form>
+						<!-- Email -->
+					  <div class="mb-3">
+					    <label class="form-label" for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+					  </div>
+					  <!-- Password -->
+					  <div class="mb-3">
+					    <label class="form-label" for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+					  </div>
+					  <!-- Checkbox -->
+					  <div class="mb-3 form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+					  </div>
+						<!-- Button -->
+					  <div class="row align-items-center">
+							<div class="col-sm-4">
+								<button type="submit" class="btn btn-dark btn-line">Login</button>
+							</div>
+							<div class="col-sm-8 text-sm-end">
+								<span class="text-muted">Don't have an account? <a href="sign-up.html">Signup here</a></span>
+							</div>
+						</div>
+					</form>
+					<!-- Form END -->
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Popup END -->
+
+<!-- =======================
+Header START -->
+<header class="navbar-dark navbar-transparent navbar-sticky navbar-link-xl">
+	<div class="divider-light opacity-1"></div>
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand" href="index.html">
+				<img class="navbar-brand-item" src="assets/images/logo-light.png" alt="Logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Responsive navbar toggler -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd" aria-controls="offcanvasEnd" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"> </span>
+			</button>
+
+			<!-- Main Menu START -->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll ms-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Startups</a></li>
+					<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+					<li class="nav-item"><a class="nav-link" href="comming-soon.html">About Us</a></li>
+					<li class="nav-item"><a class="nav-link" href="comming-soon.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<!-- Main Menu END -->
+			<!-- Nav right START -->
+			<div class="nav flex-nowrap align-items-center">
+				<!-- Nav Search Opener-->
+				<div class="nav-item">
+					<a class="nav-link ms-2" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open">
+						<i class="bi bi-search display-9 "> </i>
+					</a>
+				</div>
+			</div>
+			<!-- Nav right END -->			
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Main banner -->
+
+
+
+<!-- =======================
+Inner intro START -->
+<section class="bg-dark pattern-overlay-5 position-relative text-center bg-hd-color">
+	<div class="container">
+		<div class="row head-add">
+			<div class="col-lg-8 mx-auto">
+				<h1 class="text-white display-6">Our Services</h1>
+				<p class="text-white">below our services list</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Inner intro END -->
+
+<!-- =======================
+Service START -->
+<section class="bg-light position-relative">
+	<!-- Shape Decoration START -->
+	<div class="position-absolute start-0 top-0 w-100">
+		<div class="bg-dark-overlay-dotted py-3 opacity-4"></div>
+	</div>
+	
+	<!-- Shape Decoration END -->
+	<div class="container">
+		<div class="row justify-content-between mt-4">
+			<!-- Title -->
+			<div class="col-lg-6">
+				<span class="font-alt fw-normal display-8 fw-normal">Our interesting insights</span>
+				<h2 class="display-7">Delivering Exceptional <span class="bg-primary text-white py-1">benefits.</span></h2>
+				<p><b>Baghdad Startup </b> Baghdad startups supports Iraqis entrepreneurs by investing in and mentoring startups throughout their journey to address their business needs and foster their growth.</p>
+				<a href="#" class="btn btn-line text-dark mb-5">Check success stories</a>
+			</div>
+			<!-- Services -->
+			<div class="col-lg-6">
+				<!-- Service item -->
+				<div class="d-flex mb-5">
+				  <h2 class="display-4 fa-fw text-end text-light-stroke">01</h2>
+				  <div class="ms-3 ms-md-5">
+				    <h4 class="mt-0">Hosting office space</h4>
+				    <p class="mb-2">Whether you are looking for your own office for your team or a desk in our coworking-space, we have it all. And to top it off we have an inspiring and active business community to go with the perfect working environment!</p>
+				  </div>
+				</div>
+				<!-- Service item -->
+				<div class="d-flex mb-5">
+				  <h2 class="display-4 fa-fw text-end text-light-stroke">02</h2>
+				  <div class="ms-3 ms-md-5">
+				    <h4 class="mt-0">Collaborate with marketing Players</h4>
+				    <p class="mb-2">Backed by powerful tech companies and influential <b>Baghdad Startup </b>public and private sector entities, expand your network and make new connections.</p>
+				  </div>
+				</div>
+				<!-- Service item -->
+				<div class="d-flex">
+				  <h2 class="display-4 fa-fw text-end text-light-stroke">03</h2>
+				  <div class="ms-3 ms-md-5">
+				    <h4 class="mt-0">Accelerate your startup to next level</h4>
+				    <p class="mb-2">Through our wide ranging accelerator programs, gain access to entrepreneurs, investors and experts in your sector who can help your startup take-off</p>
+				  </div>
+				</div>
+			</div>
+		</div><!-- Row end -->
+	</div>
+
+	<div class="position-absolute start-0 bottom-0 w-100">
+		<div class="bg-dark-overlay-dotted py-3 opacity-4"></div>
+	</div>
+
+</section>
+<!-- =======================
+Service END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="footer-sticky footer-bg pt-6">
+	<div class="container">
+		<div class="row">
+
+			<!-- Footer Widget 1 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+				<h3 class="text-white">Startups<span class="text-primary">.</span></h3>
+				<p>We have the largest startups community</p>
+				<div class="d-flex me-auto">
+					<h6 class="mt-2 me-4 text-white">Follow on:</h6>
+					<div class="list-group-inline list-unstyled text-primary-hover">
+						<a href="#" class="list-group-item text-white bg-transparent">Fb</a>
+						<a href="#" class="list-group-item text-white bg-transparent">Tw</a>
+						<a href="#" class="list-group-item text-white bg-transparent">Dr</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Widget 2 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+				<h5 class="mb-4 text-white">Our offices</h5>
+				<!-- Address 1 -->
+				<p class="text-white mb-2">Iraq-Baghdad</p>
+				<address class="mb-0">Mansor</address>
+				<p>Call: <a href="#" class="text-body"><u>077XXXXXXXX</u></a> </p>
+			</div>
+
+			<!-- Footer Widget 3 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+				<h5 class="mb-4 text-white">Useful links</h5>
+				<div class="row">
+					<div class="col-6">
+						<ul class="nav flex-column text-primary-hover">
+							<li class="nav-item"><a class="nav-link pt-0" href="index.html">Startups</a></li>
+							<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Widget 4 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+				<h5 class="mb-4 text-white">Stay in touch</h5>
+				<form>
+					<label class="form-label">Subscribe to our newsletter to receive exclusive news.</label>
+					<div class="mb-3">
+						<input class="form-control" type="email" placeholder="Enter email...">
+					</div>
+					<div class="mb-3">
+						<button type="submit" value="Subscribe" class="btn btn-primary mb-0">Join us</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+		<!-- Divider -->
+		<div class="divider-light opacity-1"></div>
+
+		<!-- Footer copyright START -->
+		<div class="row align-items-center justify-content-md-between py-4">
+			<div class="col-md-6">
+				<div class="text-center text-md-start">©2022 <a href="https://www.startupxxxxx.com/" target="_blank">Startup</a>. All rights reserved
+				</div>
+			</div>
+			<div class="col-md-6">
+			  <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Terms</a></li>
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Privacy</a></li>
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="#">Cookies</a></li>
+			  </ul>
+			</div>
+		</div>
+		<!-- Footer copyright END -->
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Custom cursor -->
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+<!-- Back to top -->
+<div class="back-top">
+	<div class="scroll-line"></div>
+	<span class="scoll-text">Go Up</span>
+</div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/tilt.js/dist/vanilla-tilt.min.js"></script>
+<script src="assets/vendor/sticky-js/sticky.min.js"></script>
+<script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script src="assets/vendor/jarallax/jarallax.min.js"></script>
+<script src="assets/vendor/ityped/index.js"></script>
+<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/imagesLoaded/imagesloaded.js"></script>
+
+
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+</html>
