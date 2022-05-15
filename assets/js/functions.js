@@ -784,7 +784,7 @@ var e = {
 
                     var menuItems = menu.querySelectorAll('li a');
                     var menuCloseItems = menu.querySelectorAll('li svg');
-                    const selectedInfo = []
+                    let selectedInfo = []
 
 
                     menuItems.forEach(menuItem => {
@@ -795,7 +795,21 @@ var e = {
                             filterValue !== "*" ? $(`#${filterID}`).css('margin-right', '10px') : null;
                             const selectedIndex = selectedInfo.findIndex(item => item == filterValue)
                             if ( selectedIndex == -1 && filterValue !== "*") {
+                                const allIndex = selectedInfo.findIndex(item => item == '*');
+                                if(allIndex !== -1) {
+                                    selectedInfo.splice(allIndex, 1)
+                                }
                                 selectedInfo.push(filterValue)
+                            } else {
+                                selectedInfo = []
+                                selectedInfo.push('*')
+                                menuItems.forEach((control) => {
+                                    if(control.getAttribute('id') !== 'all') {
+                                        const id = control.getAttribute('id');
+                                        $(`#${id}`).parent().removeClass('active');
+                                        $(`#${id}`).next().addClass('hide');
+                                    }
+                                })
                             }
                             filter.arrange({filter: selectedInfo.join(', ')});
                             const clIcon = document.getElementById(`${filterID}`);
