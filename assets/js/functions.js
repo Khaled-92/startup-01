@@ -783,12 +783,55 @@ var e = {
                     });
 
                     var menuItems = menu.querySelectorAll('li a');
+                    var menuCloseItems = menu.querySelectorAll('li svg');
+                    const selectedInfo = []
+
+
                     menuItems.forEach(menuItem => {
                         menuItem.addEventListener('click', function (event) {
                             var filterValue = menuItem.getAttribute('data-filter');
-                            filter.arrange({filter: filterValue});
-                            menuItems.forEach((control) => control.removeClass('active'));
-                            menuItem.addClass('active');
+                            var filterID = menuItem.getAttribute('id');
+                            $(`#${filterID}`).next().removeClass('hide');
+                            filterValue !== "*" ? $(`#${filterID}`).css('margin-right', '10px') : null;
+                            const selectedIndex = selectedInfo.findIndex(item => item == filterValue)
+                            if ( selectedIndex == -1 && filterValue !== "*") {
+                                selectedInfo.push(filterValue)
+                            }
+                            filter.arrange({filter: selectedInfo.join(', ')});
+                            const clIcon = document.getElementById(`${filterID}`);
+                            menuItems.forEach((control) =>  control.getAttribute('id') == 'all' ? control.parentElement.removeClass('active') : null);
+                            menuItem.parentElement.addClass('active');
+                        });
+                    });
+
+                    if (selectedInfo.length == 0) {
+                        filter.arrange({filter: '*'});
+                        $('#all').parent().addClass('active')
+                    }
+
+                    menuCloseItems.forEach(closeItem => {
+                        closeItem.addEventListener('click', function (event) {
+                            var closeID = closeItem.getAttribute('id');
+                            $(`#${closeID}`).addClass('hide');
+                            $(`#${closeID}`).prev().css('margin-right', '0px');
+                            $(`#${closeID}`).parent().removeClass('active')
+                            const selectedIndex = selectedInfo.findIndex(item => item == $(`#${closeID}`).prev().attr('data-filter'))                            
+                            if ( selectedIndex !== -1 ) {
+                                selectedInfo.splice(selectedIndex, 1)
+                                if (selectedInfo.length == 0) {
+                                    filter.arrange({filter: '*'});
+                                    $('#all').parent().addClass('active')
+                                }
+                                filter.arrange({filter: selectedInfo.join(', ')});
+                            }
+                            
+                            // var filterValue = closeItem.getAttribute('id');
+                            // console.log(filterValue, '----')
+                            // const data = []
+                            // var x = data.push(filterValue)
+                            // filter.arrange({filter: data.join(',') });
+                            // closeItems.forEach((control) => control.removeClass('active'));
+                            // closeItem.addClass('active');
                         });
                     });
 
